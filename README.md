@@ -8,6 +8,7 @@ MATLAB-based user interfaces for applying the ergometer to the experimental para
 (4) Monitor (HDMI) 
 (5) EEG (Brain Product)
 (6) Hight-density EMG 
+
 Optional: We use the Vicon system to record the torques and the trigger impulse. However, the trigger impulses are also recorded in EEG and EMG separately. 
 
 ## Visual stimulation 
