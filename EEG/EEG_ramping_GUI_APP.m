@@ -199,7 +199,7 @@ while Trial_n >0
 
     start(d,"continuous"); n = ceil(d.Rate/10);
     startTime = GetSecs;  
-        if ~DebugMode, triger1_check = GetSecs-startTime, timing_check=[timing_check; triger1_check]; setRTS(t, false); setDTR(t, false); io64(ioObj,address,1);  end % trigger 1: the onset of MVC measurement.   
+        if ~DebugMode, triger1_check = GetSecs-startTime, timing_check=[timing_check; triger1_check]; setRTS(t, true); setDTR(t, true); io64(ioObj,address,1);  end % trigger 1: the onset of MVC measurement.   
 
     while GetSecs <= startTime + Trial_t      
         ClosePTB
