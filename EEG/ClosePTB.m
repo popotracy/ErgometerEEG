@@ -2,8 +2,7 @@ function ClosePTB
 dvc=GetKeyboardIndices;
 [keyisdown, secs, keyflags, deltaSecs] = KbCheck(dvc)
 if  keyisdown
-    while keyflags(KbName('escape'))==1
-        save([pwd,'/Variables.mat']); 
+    while keyflags(KbName('esc'))==1
         Screen('CloseAll');
         break
     end
